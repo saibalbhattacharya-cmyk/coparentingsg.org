@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoParenting SG | Child-Centred Support, Resources & Guidance in Singapore</title>
+  <meta name="description" content="Empowering separated and divorced parents in Singapore to build constructive, child-first co-parenting partnerships with practical tools, parenting plans, and mediation resources.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #123C40;      /* Deep reassuring pine teal */
+      --color-primary-light: #1A5459;
+      --color-accent: #C78248;       /* Warm ochre / amber */
+      --color-accent-soft: #F9EFE6;
+      --color-bg-sage: #F2F6F5;      /* Calming sage grey */
+      --color-card-bg: #FFFFFF;
+      --color-text-dark: #1F2937;
+      --color-text-muted: #5A6A6E;
+      --color-border: #E1EBE8;
+      --color-green: #2E7D5B;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(18, 60, 64, 0.05);
+      --shadow-md: 0 10px 25px -5px rgba(18, 60, 64, 0.08);
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-dark);
+      background-color: #FFFFFF;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--color-accent);
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header & Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 1000;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-symbol {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+
+    .brand-tagline {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--color-accent);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-text-muted);
+    }
+
+    .nav-links a:hover {
+      color: var(--color-primary);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 22px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 14px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-primary-light);
+      color: #FFFFFF;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      background-color: var(--color-accent-soft);
+      color: var(--color-accent);
+      border: 1px solid rgba(199, 130, 72, 0.2);
+    }
+
+    .btn-secondary:hover {
+      background-color: #F4E5D8;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 72px 0 84px;
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--color-bg-sage) 100%);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #E2ECE9;
+      color: var(--color-primary);
+      padding: 6px 14px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge span {
+      width: 8px;
+      height: 8px;
+      background-color: var(--color-green);
+      border-radius: 50%;
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: 46px;
+      line-height: 1.2;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      font-size: 17px;
+      color: var(--color-text-muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .hero-card {
+      background-color: var(--color-card-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    .card-heading {
+      font-family: var(--font-display);
+      font-size: 20px;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+    }
+
+    .card-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .card-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--color-text-dark);
+    }
+
+    .card-list-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      background: #E8F3F1;
+      color: var(--color-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Pillars */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title-wrap {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 52px;
+    }
+
+    .section-kicker {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-accent);
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 34px;
+      color: var(--color-primary);
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--color-text-muted);
+    }
+
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .pillar-card {
+      background-color: var(--color-card-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .pillar-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background-color: var(--color-bg-sage);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 22px;
+    }
+
+    .pillar-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .pillar-desc {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* Interactive Parenting Plan Tool */
+    .tool-section {
+      background-color: var(--color-bg-sage);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .interactive-card {
+      background-color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-border);
+      padding: 40px;
+      box-shadow: var(--shadow-md);
+    }
+
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 28px 0;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      background-color: #F8FBFA;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .check-item:hover {
+      background-color: #EFF7F5;
+    }
+
+    .check-item input[type="checkbox"] {
+      margin-top: 4px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--color-primary);
+      cursor: pointer;
+    }
+
+    .check-text h4 {
+      font-size: 15px;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+
+    .check-text p {
+      font-size: 13px;
+      color: var(--color-text-muted);
+      line-height: 1.45;
+    }
+
+    .tool-results-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 24px;
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+      border-radius: var(--radius-sm);
+      margin-top: 24px;
+    }
+
+    .tool-results-text h5 {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .tool-results-text p {
+      font-size: 13px;
+      opacity: 0.85;
+    }
+
+    /* Singapore Resources Grid */
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .resource-card {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 26px;
+      background-color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .resource-tag {
+      align-self: flex-start;
+      background-color: var(--color-accent-soft);
+      color: var(--color-accent);
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .resource-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 8px;
+    }
+
+    .resource-desc {
+      font-size: 14px;
+      color: var(--color-text-muted);
+      margin-bottom: 18px;
+    }
+
+    .resource-link {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--color-primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Contact & Form Section */
+    .contact-section {
+      background-color: #FFFFFF;
+    }
+
+    .contact-box {
+      background: linear-gradient(135deg, var(--color-primary) 0%, #16464B 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 44px;
+    }
+
+    .contact-info h3 {
+      font-family: var(--font-display);
+      font-size: 32px;
+      margin-bottom: 16px;
+      line-height: 1.25;
+    }
+
+    .contact-info p {
+      font-size: 15px;
+      opacity: 0.9;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      font-weight: 600;
+      color: #FFFFFF;
+    }
+
+    .form-control {
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      font-family: var(--font-body);
+      font-size: 14px;
+      outline: none;
+    }
+
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.55);
+    }
+
+    .form-control:focus {
+      background: rgba(255, 255, 255, 0.18);
+      border-color: #FFFFFF;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0B2426;
+      color: #FFFFFF;
+      padding: 64px 0 32px;
+      font-size: 14px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-col h4 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 18px;
+      color: #A3D4CC;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col a {
+      color: #CADCD9;
+      font-size: 13px;
+    }
+
+    .footer-col a:hover {
+      color: #FFFFFF;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      color: #8CAAA5;
+      font-size: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid, .pillars-grid, .checklist-grid, .resource-grid, .contact-box, .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 36px;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="brand">
+        <div class="brand-symbol">C</div>
+        <div class="brand-text">
+          <span class="brand-title">CoParenting SG</span>
+          <span class="brand-tagline">coparentingsg.org</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pillars">Guiding Principles</a></li>
+        <li><a href="#planner">Parenting Plan</a></li>
+        <li><a href="#resources">Singapore Resources</a></li>
+        <li><a href="#contact" class="btn btn-secondary">Get In Touch</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">
+          <span></span> Serving Families Across Singapore
+        </div>
+        <h1 class="hero-title">Protecting childhoods through constructive co-parenting</h1>
+        <p class="hero-subtitle">
+          Navigating separation or divorce is challenging. CoParenting SG is an independent Singapore initiative providing practical frameworks, shared parenting plans, and dispute-resolution tools to put your children first.
+        </p>
+        <div class="hero-actions">
+          <a href="#planner" class="btn btn-primary">Create a Parenting Plan</a>
+          <a href="#resources" class="btn btn-secondary">Explore Local Services</a>
+        </div>
+      </div>
+
+      <!-- Quick Summary Card -->
+      <div class="hero-card">
+        <h3 class="card-heading">Child-First Priorities</h3>
+        <ul class="card-list">
+          <li>
+            <div class="card-list-icon">✓</div>
+            <div><strong>Predictable Routines:</strong> Stable access arrangements aligned with Singapore school calendars and holistic well-being.</div>
+          </li>
+          <li>
+            <div class="card-list-icon">✓</div>
+            <div><strong>Neutral Communication:</strong> Clear protocols that keep adult conflict away from children.</div>
+          </li>
+          <li>
+            <div class="card-list-icon">✓</div>
+            <div><strong>Transparent Financials:</strong> Equitable contribution tracking for school fees, healthcare, and enrichment.</div>
+          </li>
+          <li>
+            <div class="card-list-icon">✓</div>
+            <div><strong>Community Guidance:</strong> Direct connections to Singapore Family Service Centres (FSCs) and certified mediators.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars Section -->
+  <section class="section" id="pillars">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-kicker">Core Foundations</div>
+        <h2 class="section-title">The Three Pillars of Healthy Co-Parenting</h2>
+        <p class="section-subtitle">Based on Singapore Family Justice Courts guidelines and international family psychology best practices.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-icon">🤝</div>
+          <h3 class="pillar-title">Collaborative Partnership</h3>
+          <p class="pillar-desc">
+            Viewing co-parenting as a focused, respectful business partnership where the child's emotional security and healthy development are the shared enterprise.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">📅</div>
+          <h3 class="pillar-title">Structured Schedules</h3>
+          <p class="pillar-desc">
+            Mitigating anxiety by establishing clear care schedules, holiday rotation rules, and transparent handover protocols adapted to Singapore's academic terms.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">⚖️</div>
+          <h3 class="pillar-title">Low-Conflict Resolution</h3>
+          <p class="pillar-desc">
+            Leveraging private mediation, constructive negotiation, and agreed decision-making frameworks before turning to contentious legal proceedings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Parenting Plan Builder -->
+  <section class="section tool-section" id="planner">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-kicker">Interactive Tool</div>
+        <h2 class="section-title">Essential Singapore Parenting Plan Checklist</h2>
+        <p class="section-subtitle">Select the areas your co-parenting agreement currently addresses to identify gaps and strengthen cooperation.</p>
+      </div>
+
+      <div class="interactive-card">
+        <div class="checklist-grid">
+          <label class="check-item">
+            <input type="checkbox" onchange="updateProgress()" checked>
+            <div class="check-text">
+              <h4>Living & Care Arrangements</h4>
+              <p>Defined weekday and weekend schedules with transparent pick-up and drop-off points.</p>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="updateProgress()" checked>
+            <div class="check-text">
+              <h4>Singapore School Holidays & Terms</h4>
+              <p>Alternating arrangements for March, June, September, and year-end school breaks.</p>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="updateProgress()">
+            <div class="check-text">
+              <h4>Major Cultural & Religious Holidays</h4>
+              <p>Agreed plans for Chinese New Year, Hari Raya, Deepavali, Christmas, and birthdays.</p>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="updateProgress()">
+            <div class="check-text">
+              <h4>Healthcare & Medical Decisions</h4>
+              <p>Designated primary paediatricians, emergency notifications, and medical insurance coverage.</p>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="updateProgress()">
+            <div class="check-text">
+              <h4>Education & Tuition Costs</h4>
+              <p>Protocols for selecting primary/secondary schools, enrichment classes, and cost sharing.</p>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" onchange="updateProgress()">
+            <div class="check-text">
+              <h4>Overseas Travel & Passport Custody</h4>
+              <p>Minimum 30-day notice for international trips, itinerary sharing, and passport turnover.</p>
+            </div>
+          </label>
+        </div>
+
+        <div class="tool-results-bar">
+          <div class="tool-results-text">
+            <h5 id="progress-heading">Checklist Progress: 2 of 6 Items Completed</h5>
+            <p id="progress-sub">Complete all items to create a comprehensive, low-conflict agreement.</p>
+          </div>
+          <button class="btn btn-secondary" onclick="exportPlan()">Download Summary</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Singapore Support & Mediation Directory -->
+  <section class="section" id="resources">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-kicker">Local Support Directory</div>
+        <h2 class="section-title">Trusted Support Services in Singapore</h2>
+        <p class="section-subtitle">Official agencies, accredited mediation centres, and family counselling networks.</p>
+      </div>
+
+      <div class="resource-grid">
+        <div class="resource-card">
+          <div>
+            <span class="resource-tag">Judicial Guidance</span>
+            <h3 class="resource-title">Family Justice Courts (FJC)</h3>
+            <p class="resource-desc">
+              Singapore's specialised court system handling family matters with a primary emphasis on therapeutic justice and amicable dispute settlement.
+            </p>
+          </div>
+          <a href="https://www.judiciary.gov.sg/family" target="_blank" rel="noopener" class="resource-link">Visit FJC Portal →</a>
+        </div>
+
+        <div class="resource-card">
+          <div>
+            <span class="resource-tag">Community Services</span>
+            <h3 class="resource-title">Family Service Centres (FSCs)</h3>
+            <p class="resource-desc">
+              Ministry of Social and Family Development (MSF) funded neighbourhood hubs offering family counselling, casework, and parenting workshops.
+            </p>
+          </div>
+          <a href="https://www.msf.gov.sg" target="_blank" rel="noopener" class="resource-link">Locate Nearest FSC →</a>
+        </div>
+
+        <div class="resource-card">
+          <div>
+            <span class="resource-tag">Alternative Dispute Resolution</span>
+            <h3 class="resource-title">Singapore Mediation Centre (SMC)</h3>
+            <p class="resource-desc">
+              Professional commercial and family mediation services helping parents reach binding, amicable settlement agreements outside courtroom litigation.
+            </p>
+          </div>
+          <a href="https://www.mediation.com.sg" target="_blank" rel="noopener" class="resource-link">View Family Mediation Scheme →</a>
+        </div>
+
+        <div class="resource-card">
+          <div>
+            <span class="resource-tag">Government Support</span>
+            <h3 class="resource-title">Divorce Support Specialist Agencies (DSSAs)</h3>
+            <p class="resource-desc">
+              Specialised MSF programmes offering pre-divorce briefings, post-divorce support groups, and supervised child exchange/visitation services.
+            </p>
+          </div>
+          <a href="https://www.msf.gov.sg" target="_blank" rel="noopener" class="resource-link">Find DSSA Centres →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Consultation Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="contact-info">
+          <h3>Let's build a calmer path forward.</h3>
+          <p>
+            Whether you need a confidential sounding board, parenting plan review, or recommendations for child-centred mediation in Singapore, we are here to support you.
+          </p>
+          <p>
+            <strong>Domain:</strong> coparentingsg.org<br>
+            <strong>Confidentiality:</strong> In accordance with Singapore PDPA guidelines, all communications remain strictly private.
+          </p>
+        </div>
+
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" class="form-control" placeholder="e.g. Alex Tan" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="e.g. alex@example.sg" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">How can we assist you?</label>
+            <textarea id="message" rows="4" class="form-control" placeholder="Tell us about your parenting plan needs or questions..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-secondary" style="background:#FFFFFF; color:var(--color-primary); border:none; margin-top:8px;">
+            Send Confidential Inquiry
+          </button>
+          <div id="form-feedback" style="display:none; color:#C2EDE7; font-size:13px; margin-top:6px;">
+            Thank you. Your message has been received securely. We will be in touch shortly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-title" style="color:#FFFFFF; margin-bottom:12px;">CoParenting SG</div>
+          <p style="color:#CADCD9; line-height:1.6; max-width:380px;">
+            Dedicated to promoting constructive, child-centred co-parenting relationships across Singapore. Serving families with empathy, clarity, and practical guidance.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About the Initiative</a></li>
+            <li><a href="#pillars">Guiding Principles</a></li>
+            <li><a href="#planner">Parenting Plan Checklist</a></li>
+            <li><a href="#resources">Singapore Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Notice</h4>
+          <ul>
+            <li><a href="#">Singapore PDPA Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Disclaimer Notice</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 CoParenting SG (coparentingsg.org). All rights reserved.</div>
+        <div>For information purposes only; does not constitute formal legal counsel.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function updateProgress() {
+      const checkboxes = document.querySelectorAll('.checklist-grid input[type="checkbox"]');
+      let checkedCount = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) checkedCount++;
+      });
+      const heading = document.getElementById('progress-heading');
+      const sub = document.getElementById('progress-sub');
+      heading.innerText = `Checklist Progress: ${checkedCount} of ${checkboxes.length} Items Completed`;
+      if (checkedCount === checkboxes.length) {
+        sub.innerText = 'Outstanding! You have addressed all core Singapore co-parenting pillars.';
+      } else {
+        sub.innerText = 'Keep going to ensure your parenting agreement covers all key living and holiday scenarios.';
+      }
+    }
+
+    function exportPlan() {
+      alert('Your CoParenting SG checklist summary has been prepared. You can print or save this page as PDF using your browser (Ctrl+P or Cmd+P).');
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-feedback').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
