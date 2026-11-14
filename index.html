@@ -3,8 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoParenting SG | Child-Centred Support, Resources & Guidance in Singapore</title>
+  <title>CoParenting SG | Child-Centred Support, Resources & Parenting Plans in Singapore</title>
   <meta name="description" content="Empowering separated and divorced parents in Singapore to build constructive, child-first co-parenting partnerships with practical tools, parenting plans, and mediation resources.">
+  <meta name="keywords" content="coparenting Singapore, parenting plan Singapore, child custody Singapore, divorce mediation Singapore, Family Justice Courts Singapore, separated parents support">
+  <link rel="canonical" href="https://coparentingsg.org/">
+
+  <!-- Open Graph Meta Tags (for WhatsApp, Facebook, LinkedIn previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://coparentingsg.org/">
+  <meta property="og:title" content="CoParenting SG | Child-Centred Support & Guidance in Singapore">
+  <meta property="og:description" content="Practical tools, parenting plans, and dispute-resolution resources designed to help separated parents in Singapore put children first.">
+  <meta property="og:site_name" content="CoParenting SG">
+  <meta property="og:locale" content="en_SG">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CoParenting SG | Child-Centred Support in Singapore">
+  <meta name="twitter:description" content="Empowering separated and divorced parents in Singapore with constructive frameworks, schedules, and mediation guidance.">
+
+  <!-- Schema.org JSON-LD (Google Rich Search Snippet) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "NGO",
+        "@id": "https://coparentingsg.org/#organization",
+        "name": "CoParenting SG",
+        "url": "https://coparentingsg.org",
+        "description": "An independent Singapore initiative providing practical frameworks, shared parenting plans, and dispute-resolution tools for separated and divorced parents.",
+        "founder": {
+          "@type": "Person",
+          "name": "Saibal Bhattacharya",
+          "jobTitle": "Founder & Initiative Lead"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Singapore"
+        },
+        "knowsAbout": [
+          "Co-parenting in Singapore",
+          "Singapore Parenting Plans",
+          "Family Mediation",
+          "Child Care Arrangements",
+          "Singapore Family Justice Courts Resources"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://coparentingsg.org/#website",
+        "url": "https://coparentingsg.org",
+        "name": "CoParenting SG",
+        "publisher": {
+          "@id": "https://coparentingsg.org/#organization"
+        },
+        "inLanguage": "en-SG"
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -483,6 +540,87 @@
       gap: 6px;
     }
 
+    /* Founder Section */
+    .founder-section {
+      background-color: #FFFFFF;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .founder-card {
+      background: linear-gradient(180deg, #FFFFFF 0%, var(--color-bg-sage) 100%);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .founder-avatar-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .founder-avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+      color: #FFFFFF;
+      font-family: var(--font-display);
+      font-size: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 20px rgba(18, 60, 64, 0.15);
+      border: 4px solid #FFFFFF;
+    }
+
+    .founder-name {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+
+    .founder-role {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-accent);
+    }
+
+    .founder-bio {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .founder-bio p {
+      font-size: 15px;
+      color: var(--color-text-dark);
+      line-height: 1.65;
+    }
+
+    .founder-quote {
+      padding: 14px 20px;
+      background-color: #FFFFFF;
+      border-left: 4px solid var(--color-accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-style: italic;
+      color: var(--color-primary);
+      font-size: 14px;
+      margin-top: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
     /* Contact & Form Section */
     .contact-section {
       background-color: #FFFFFF;
@@ -601,7 +739,7 @@
 
     /* Responsive */
     @media (max-width: 900px) {
-      .hero-grid, .pillars-grid, .checklist-grid, .resource-grid, .contact-box, .footer-grid {
+      .hero-grid, .founder-card, .pillars-grid, .checklist-grid, .resource-grid, .contact-box, .footer-grid {
         grid-template-columns: 1fr;
       }
       .hero-title {
@@ -628,6 +766,7 @@
 
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#founder">About Founder</a></li>
         <li><a href="#pillars">Guiding Principles</a></li>
         <li><a href="#planner">Parenting Plan</a></li>
         <li><a href="#resources">Singapore Resources</a></li>
@@ -674,6 +813,33 @@
             <div><strong>Community Guidance:</strong> Direct connections to Singapore Family Service Centres (FSCs) and certified mediators.</div>
           </li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Section -->
+  <section class="section founder-section" id="founder">
+    <div class="container">
+      <div class="founder-card">
+        <div class="founder-avatar-box">
+          <div class="founder-avatar">SB</div>
+          <h3 class="founder-name">Saibal Bhattacharya</h3>
+          <span class="founder-role">Founder & Initiative Lead</span>
+        </div>
+
+        <div class="founder-bio">
+          <div class="section-kicker" style="margin-bottom:4px;">A Message from the Founder</div>
+          <h2 class="section-title" style="font-size:26px; margin-bottom:12px;">Building a Calmer, Child-Centred Tomorrow</h2>
+          <p>
+            CoParenting SG was founded by <strong>Saibal Bhattacharya</strong> with a clear, singular vision: to help families in Singapore navigate the emotional and logistical complexities of separation with dignity, structure, and an uncompromising focus on the well-being of the children.
+          </p>
+          <p>
+            Recognizing that the traditional adversarial process often magnifies tension, Saibal established CoParenting SG as an independent, community-driven resource hub. The platform bridges the gap between legal formalities and day-to-day parenting realities—offering practical tools, Singapore-adapted parenting schedules, and low-conflict communication frameworks.
+          </p>
+          <div class="founder-quote">
+            "Divorce ends a marital relationship, but co-parenting endures for a lifetime. When parents are equipped with structured agreements and mutual clarity, children thrive."
+          </div>
+        </div>
       </div>
     </div>
   </section>

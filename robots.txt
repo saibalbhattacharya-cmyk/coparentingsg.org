@@ -1,0 +1,6 @@
+# Allow all search engine crawlers
+User-agent: *
+Allow: /
+
+# Link to XML Sitemap
+Sitemap: https://coparentingsg.org/sitemap.xml
