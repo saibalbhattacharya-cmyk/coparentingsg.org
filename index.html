@@ -58,6 +58,52 @@
           "@id": "https://coparentingsg.org/#organization"
         },
         "inLanguage": "en-SG"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://coparentingsg.org/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between Custody, Care and Control, and Access in Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under Singapore family law, 'Custody' refers to the legal authority to make major, long-term decisions concerning a child's welfare, education, religion, and significant healthcare. Singapore courts commonly grant joint custody to ensure both parents remain involved. 'Care and Control' refers to day-to-day living arrangements and care, determining which parent the child lives with on weekdays. 'Access' refers to regular, structured time (such as weekends, school holidays, and public holidays) that the parent without care and control spends with the child."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are MOE school holidays usually shared between co-parents in Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Singapore follows a four-term academic calendar structured by the Ministry of Education (MOE). Standard co-parenting agreements typically divide term breaks equitably: alternating the 1-week March and September breaks annually, and splitting the longer 4-week June and 6-week November/December breaks into equal halves. This allows children predictable time with both parents while planning holiday travel with clear advance notice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What expenses are typically included in child maintenance in Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Child maintenance in Singapore covers the child's essential and reasonable living needs. Beyond basic food, clothing, and utilities, agreements typically account for MOE school fees, textbooks, medical and dental treatment, insurance premiums, and agreed enrichment or tuition classes. Parents often establish transparent record-keeping and equal or proportional contribution formulas based on respective earning capacities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Therapeutic Justice in the Singapore Family Justice Courts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Therapeutic Justice (TJ) is the guiding philosophy of the Singapore Family Justice Courts (FJC). It emphasizes healing, constructive problem-solving, and non-adversarial resolution rather than prolonged courtroom conflict. The objective is to help separating couples transition from being spouses to functioning co-parents, preserving family relationships and prioritizing children's emotional and psychological well-being."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do parents need a lawyer to draft an agreed Parenting Plan in Singapore?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Parents are encouraged to reach mutual agreement on child arrangements constructively through certified family mediation (such as through the Singapore Mediation Centre or Court Family Dispute Resolution) or collaborative discussions. Once agreed, a parenting plan can be incorporated into formal court orders or consent orders by legal counsel to ensure clarity, enforceability, and mutual peace of mind."
+            }
+          }
+        ]
       }
     ]
   }
@@ -653,6 +699,99 @@
       color: var(--color-primary-light);
     }
 
+    /* FAQ Section */
+    .faq-section {
+      background-color: var(--color-teal-tint);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-container {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .faq-item {
+      background-color: #FFFFFF;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s ease;
+    }
+
+    .faq-item:hover {
+      border-color: var(--color-primary-light);
+    }
+
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      padding: 22px 26px;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: 16.5px;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      line-height: 1.4;
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--color-teal-soft);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 16px;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 26px 24px;
+      color: var(--color-text-dark);
+      font-size: 15px;
+      line-height: 1.65;
+      border-top: 1px solid var(--color-teal-tint);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+      padding-top: 12px;
+    }
+
+    .legal-notice-box {
+      margin-top: 36px;
+      padding: 18px 24px;
+      background-color: #FFFFFF;
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-primary);
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
     /* Contact & Form Section */
     .contact-section {
       background-color: #FFFFFF;
@@ -806,6 +945,7 @@
         <li><a href="#founder">About Founder</a></li>
         <li><a href="#pillars">Guiding Principles</a></li>
         <li><a href="#planner">Parenting Plan</a></li>
+        <li><a href="#faq">Questions & Answers</a></li>
         <li><a href="#resources">Singapore Resources</a></li>
         <li><a href="#contact" class="btn btn-secondary">Get In Touch</a></li>
       </ul>
@@ -817,7 +957,7 @@
     <div class="container hero-grid">
       <div>
         <div class="hero-badge">
-          <span></span> Serving Families Across Singapore
+          <span></span> 🇸🇬 Serving Families Across Singapore
         </div>
         <h1 class="hero-title">Protecting childhoods through constructive co-parenting</h1>
         <p class="hero-subtitle">
@@ -1046,6 +1186,131 @@
     </div>
   </section>
 
+  <!-- Singapore Co-Parenting FAQ Section -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-kicker">Knowledge & Clarity</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Factual information on parenting terminology, school schedules, and non-adversarial processes in Singapore.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- Question 1 -->
+        <div class="faq-item active">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is the difference between Custody, Care and Control, and Access in Singapore?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              In Singapore family law, these three legal terms govern distinct aspects of a child's care:
+            </p>
+            <p style="margin-top:8px;">
+              <strong>1. Custody:</strong> Concerns major, long-term decisions impacting the child’s future—such as education, religion, and significant medical care. Singapore courts commonly award <em>joint custody</em>, encouraging both parents to co-operate on major milestones regardless of marital status.
+            </p>
+            <p style="margin-top:8px;">
+              <strong>2. Care and Control:</strong> Designates which parent the child lives with day-to-day. The parent with care and control manages daily routines, diet, and ordinary domestic schedules.
+            </p>
+            <p style="margin-top:8px;">
+              <strong>3. Access:</strong> Outlines the structured time the parent without care and control spends with the child. Access is typically divided into regular weekday/weekend access, public holidays, and school vacation access.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>How are MOE school holidays typically divided between co-parents?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Singapore's primary and secondary schools operate on a four-term Ministry of Education (MOE) calendar. Common co-parenting practices for school holidays include:
+            </p>
+            <p style="margin-top:8px;">
+              • <strong>Short Breaks (March & September, 1 week each):</strong> Frequently alternated year-by-year (e.g., Parent A has March in odd years; Parent B has March in even years).
+            </p>
+            <p style="margin-top:8px;">
+              • <strong>Mid-Year Break (June, ~4 weeks):</strong> Typically split into equal two-week blocks or alternating halves.
+            </p>
+            <p style="margin-top:8px;">
+              • <strong>Year-End Break (Nov/Dec, ~6 weeks):</strong> Divided into two equal three-week blocks, with specific rotations arranged for Christmas and New Year.
+            </p>
+            <p style="margin-top:8px;">
+              Agreements often include a standard protocol requiring 30 to 45 days' advance written notice for overseas holiday travel to ensure smooth passport exchange and itinerary coordination.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What expenses are commonly included in child maintenance?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Child maintenance agreements in Singapore are designed to cover the reasonable living expenses of the child. Standard categories commonly structured in parenting agreements include:
+            </p>
+            <p style="margin-top:8px;">
+              • <strong>Basic Living Costs:</strong> Food, daily transportation, pocket money, and clothing.
+            </p>
+            <p style="margin-top:8px;">
+              • <strong>Formal Education:</strong> School fees, textbooks, uniforms, and mandatory school excursions.
+            </p>
+            <p style="margin-top:8px;">
+              • <strong>Tuition & Enrichment:</strong> Agreed supplemental academic tuition, music, sports, or language programmes.
+            </p>
+            <p style="margin-top:8px;">
+              • <strong>Medical & Healthcare:</strong> Medical consultations, dental care, hospitalisation insurance premiums, and optical expenses.
+            </p>
+            <p style="margin-top:8px;">
+              Parents often agree to maintain a joint monthly accounting record and share ad-hoc major expenses equally or proportionally based on relative income.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>What is Therapeutic Justice (TJ) in the Singapore Family Justice Courts?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Therapeutic Justice is an overarching framework adopted by Singapore's Family Justice Courts (FJC). Rather than treating divorce as an adversarial contest with "winners and losers," the court views it as a family in transition needing practical, emotional, and relational support.
+            </p>
+            <p style="margin-top:8px;">
+              The court promotes non-adversarial dispute resolution, counselling, and mediation to assist parents in focusing on sustainable solutions for their children. The goal is to reduce hostility and foster an ongoing collaborative parental relationship.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            <span>Do we need a formal court hearing to agree on a Parenting Plan?</span>
+            <div class="faq-icon">+</div>
+          </button>
+          <div class="faq-answer">
+            <p>
+              No contested court hearing is required if both parents reach an amicable consensus. Parents in Singapore can formulate an agreed Parenting Plan through private discussion, accredited community mediation (such as through the Singapore Mediation Centre), or counselling via Divorce Support Specialist Agencies (DSSAs).
+            </p>
+            <p style="margin-top:8px;">
+              Once both parties agree to the terms, the plan can be submitted to the Family Justice Courts as a draft Consent Order through legal counsel, formalising the agreement peacefully and efficiently.
+            </p>
+          </div>
+        </div>
+
+        <!-- Factual & Legal Information Notice -->
+        <div class="legal-notice-box">
+          <strong>Important Information Notice:</strong> CoParenting SG is an educational community platform founded to share factual frameworks, practical templates, and accredited local resources. Content on this website is for general educational and informational purposes only and does not constitute formal legal representation, financial advice, or psychological therapy. Parents requiring bespoke legal counsel or binding court documentation should consult a qualified Singapore family law advocate or accredited court mediator.
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact & Consultation Section -->
   <section class="section contact-section" id="contact">
     <div class="container">
@@ -1153,6 +1418,19 @@
       e.preventDefault();
       document.getElementById('form-feedback').style.display = 'block';
       e.target.reset();
+    }
+
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isActive = item.classList.contains('active');
+
+      // Close all items first for clean accordion UX
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+
+      // Toggle current
+      if (!isActive) {
+        item.classList.add('active');
+      }
     }
   </script>
 </body>
