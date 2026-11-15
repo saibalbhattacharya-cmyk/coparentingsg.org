@@ -44,6 +44,7 @@
         "knowsAbout": [
           "Co-parenting in Singapore",
           "Singapore Parenting Plans",
+          "Singapore Family Weekend Activities",
           "Family Mediation",
           "Child Care Arrangements",
           "Singapore Family Justice Courts Resources"
@@ -915,7 +916,7 @@
 
     /* Responsive */
     @media (max-width: 900px) {
-      .hero-grid, .founder-card, .pillars-grid, .checklist-grid, .resource-grid, .contact-box, .footer-grid {
+      .hero-grid, .founder-card, .pillars-grid, .checklist-grid, .resource-grid, .activity-filter-grid, .contact-box, .footer-grid {
         grid-template-columns: 1fr;
       }
       .hero-title {
@@ -924,6 +925,215 @@
       .nav-links {
         display: none;
       }
+    }
+
+    /* Activity Finder & Connection Jar Styles */
+    .activity-section {
+      background-color: #FFFFFF;
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .activity-mode-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .mode-tab {
+      padding: 12px 26px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 14.5px;
+      cursor: pointer;
+      border: 1.5px solid var(--color-border);
+      background-color: #FFFFFF;
+      color: var(--color-text-muted);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .mode-tab:hover {
+      border-color: var(--color-primary-light);
+      color: var(--color-primary);
+    }
+
+    .mode-tab.active {
+      background-color: var(--color-primary);
+      color: #FFFFFF;
+      border-color: var(--color-primary);
+      box-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
+    }
+
+    .activity-finder-box {
+      background: linear-gradient(180deg, var(--color-teal-tint) 0%, #FFFFFF 100%);
+      border: 1px solid var(--color-teal-border);
+      border-radius: var(--radius-lg);
+      padding: 38px;
+      box-shadow: var(--shadow-sm);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .activity-filter-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .filter-group label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-primary-dark);
+    }
+
+    .filter-select {
+      padding: 11px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--color-border);
+      background-color: #FFFFFF;
+      color: var(--color-text-dark);
+      font-family: var(--font-body);
+      font-size: 13.5px;
+      font-weight: 600;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+    }
+
+    .filter-select:focus {
+      border-color: var(--color-primary);
+    }
+
+    .finder-actions {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .activity-result-card {
+      background-color: #FFFFFF;
+      border: 1.5px solid var(--color-teal-border);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .result-badge-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .tag-badge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .tag-free { background-color: var(--color-teal-soft); color: var(--color-primary-dark); }
+    .tag-region { background-color: #E2ECE9; color: var(--color-primary-dark); }
+    .tag-vibe { background-color: #E0F2FE; color: #0369A1; }
+
+    .result-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      margin-bottom: 10px;
+    }
+
+    .result-meta {
+      display: flex;
+      gap: 20px;
+      font-size: 13px;
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+
+    .result-meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .result-desc {
+      font-size: 14.5px;
+      color: var(--color-text-dark);
+      line-height: 1.6;
+      margin-bottom: 18px;
+    }
+
+    .result-conversation-box {
+      background-color: var(--color-teal-tint);
+      border-left: 4px solid var(--color-primary);
+      padding: 14px 18px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 13.5px;
+      color: var(--color-primary-dark);
+      line-height: 1.5;
+    }
+
+    /* Connection Jar Cards */
+    .jar-container {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .jar-card {
+      background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 48px 36px;
+      box-shadow: 0 12px 30px rgba(15, 118, 110, 0.25);
+      margin-bottom: 24px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .jar-category {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #99F6E4;
+      margin-bottom: 14px;
+    }
+
+    .jar-prompt {
+      font-family: var(--font-display);
+      font-size: 24px;
+      line-height: 1.4;
+      color: #FFFFFF;
     }
   </style>
 </head>
@@ -943,6 +1153,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#founder">About Founder</a></li>
+        <li><a href="#activities">Weekend Activities</a></li>
         <li><a href="#pillars">Guiding Principles</a></li>
         <li><a href="#planner">Parenting Plan</a></li>
         <li><a href="#faq">Questions & Answers</a></li>
@@ -1017,6 +1228,101 @@
             "Divorce ends a marital relationship, but co-parenting endures for a lifetime. When parents are equipped with structured agreements and mutual clarity, children thrive."
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Activity Generator & Connection Jar (Autopilot Engine) -->
+  <section class="section activity-section" id="activities">
+    <div class="container">
+      <div class="section-title-wrap">
+        <div class="section-kicker">Interactive Co-Parenting Tools</div>
+        <h2 class="section-title">Singapore Family Experience Engine</h2>
+        <p class="section-subtitle">Evergreen, high-bonding weekend ideas and low-friction conversation starters designed for meaningful parent-child connection.</p>
+      </div>
+
+      <!-- Mode Switcher Tabs -->
+      <div class="activity-mode-tabs">
+        <button class="mode-tab active" id="tab-finder" onclick="switchActivityMode('finder')">
+          🧭 Weekend Activity Finder
+        </button>
+        <button class="mode-tab" id="tab-jar" onclick="switchActivityMode('jar')">
+          💬 "The Connection Jar" Card Deck
+        </button>
+      </div>
+
+      <!-- Mode 1: Activity Finder -->
+      <div id="view-finder" class="activity-finder-box">
+        <div class="activity-filter-grid">
+          <div class="filter-group">
+            <label for="filter-vibe">Vibe & Atmosphere</label>
+            <select id="filter-vibe" class="filter-select" onchange="filterActivities()">
+              <option value="all">Any Atmosphere</option>
+              <option value="outdoors">Outdoors & Nature</option>
+              <option value="rainy">Rainy Day / Indoors</option>
+              <option value="active">Active & Movement</option>
+              <option value="lowkey">Low-Key & Creative</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-region">Singapore Region</label>
+            <select id="filter-region" class="filter-select" onchange="filterActivities()">
+              <option value="all">Islandwide</option>
+              <option value="central">Central / Downtown</option>
+              <option value="east">East Coast / Bedok</option>
+              <option value="west">West / Jurong</option>
+              <option value="north">North / Woodlands</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-cost">Budget</label>
+            <select id="filter-cost" class="filter-select" onchange="filterActivities()">
+              <option value="all">Any Budget</option>
+              <option value="free">100% Free</option>
+              <option value="low">Under $15 per person</option>
+            </select>
+          </div>
+
+          <div class="filter-group">
+            <label for="filter-age">Child's Age Group</label>
+            <select id="filter-age" class="filter-select" onchange="filterActivities()">
+              <option value="all">All Age Groups</option>
+              <option value="younger">Preschool (3–6 yrs)</option>
+              <option value="primary">Primary School (7–12 yrs)</option>
+              <option value="teen">Pre-Teen / Teen (13+ yrs)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="finder-actions">
+          <button class="btn btn-primary" onclick="randomActivity()">
+            🎲 Surprise Us (Random Idea)
+          </button>
+          <button class="btn btn-secondary" onclick="resetFilters()">
+            Reset Filters
+          </button>
+        </div>
+
+        <!-- Rendered Result Card -->
+        <div id="activity-result-display">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Mode 2: The Connection Jar -->
+      <div id="view-jar" class="jar-container" style="display:none;">
+        <div class="jar-card" onclick="drawNextCard()">
+          <span class="jar-category" id="jar-card-cat">Thought Starter</span>
+          <h3 class="jar-prompt" id="jar-card-prompt">"If we could design our own secret playground in Singapore, what would be the very first ride?"</h3>
+        </div>
+        <button class="btn btn-primary" onclick="drawNextCard()" style="background:#0F766E;">
+          ✨ Draw Another Question Card
+        </button>
+        <p style="font-size:13px; color:var(--color-text-muted); margin-top:14px;">
+          Tip: Tap during MRT rides, dinners, or access handovers to spark positive conversations without pressure.
+        </p>
       </div>
     </div>
   </section>
@@ -1432,6 +1738,273 @@
         item.classList.add('active');
       }
     }
+
+    // ==========================================
+    // Evergreen Singapore Experience & Activity Database
+    // ==========================================
+    const SINGAPORE_ACTIVITIES = [
+      {
+        id: 1,
+        title: "Rail Corridor Nature & Railway Heritage Trail",
+        region: "central",
+        vibe: "outdoors",
+        cost: "free",
+        age: "all",
+        location: "King Albert Park / Hillview MRT",
+        time: "1.5 – 2.5 hours",
+        badge: "Nature & Heritage",
+        desc: "Walk the historic, pedestrianised railway line with peaceful green canopy cover, truss bridges, and wide stroller/scooter-friendly pathways.",
+        bondingTip: "Take photos at the restored Bukit Timah Railway Station and spot native kingfishers or monitor lizards.",
+        question: "If we lived in 1930 when the trains ran all the way from Singapore to Malaysia, where would you have traveled first?"
+      },
+      {
+        id: 2,
+        title: "Central Public Library Children's Biodiversity Treehouse",
+        region: "central",
+        vibe: "rainy",
+        cost: "free",
+        age: "younger",
+        location: "Bugis / Bras Basah MRT",
+        time: "1.5 – 2 hours",
+        badge: "Storytelling & Books",
+        desc: "World's first children's green library with interactive digital installations, nature books, reading pods, and free air-conditioned weekend calm.",
+        bondingTip: "Pick 3 books each for the other person to read together in a quiet corner.",
+        question: "Which animal do you think would make the funniest librarian, and why?"
+      },
+      {
+        id: 3,
+        title: "Marina Barrage Green Roof Kite Flying & Sunset Picnic",
+        region: "central",
+        vibe: "outdoors",
+        cost: "free",
+        age: "all",
+        location: "Gardens by the Bay MRT",
+        time: "2 – 3 hours",
+        badge: "Skyline & Open Air",
+        desc: "Expansive green lawn over the reservoir offering sweeping sea and city views, ideal for flying affordable kites and enjoying simple evening snacks.",
+        bondingTip: "Work together to launch and keep a single kite flying in the sea breeze.",
+        question: "What is your favorite memory of us spending time outdoors together so far?"
+      },
+      {
+        id: 4,
+        title: "Sungei Buloh Wetland Mangrove Boardwalk Exploration",
+        region: "north",
+        vibe: "outdoors",
+        cost: "free",
+        age: "primary",
+        location: "Kranji MRT (Transfer to 925)",
+        time: "2 – 3 hours",
+        badge: "Wildlife Adventure",
+        desc: "Sturdy wooden boardwalks through mangrove forests where kids can safely spot mudskippers, tree climbing crabs, herons, and wild otters.",
+        bondingTip: "Bring a small pocket notebook for your child to sketch or record the wild creatures spotted along the trail.",
+        question: "If you could breathe underwater like a mudskipper for one whole day, what secret ocean spot would you explore?"
+      },
+      {
+        id: 5,
+        title: "East Coast Park Coastal Ride & Marine Cove Playground",
+        region: "east",
+        vibe: "active",
+        cost: "low",
+        age: "primary",
+        location: "Marine Parade / Tanjong Katong MRT",
+        time: "2 – 4 hours",
+        badge: "Active & Play",
+        desc: "Rent tandem or single bicycles along the breezy shoreline, then conquer the towering multi-level climbing towers and water play areas at Marine Cove.",
+        bondingTip: "Stop at the lagoon food village for fresh coconut water and warm prata after cycling.",
+        question: "What is one new skill or sport you'd love us to try learning together this year?"
+      },
+      {
+        id: 6,
+        title: "National Museum of Singapore Family Discovery Galleries",
+        region: "central",
+        vibe: "rainy",
+        cost: "free",
+        age: "all",
+        location: "Dhoby Ghaut / Bencoolen MRT",
+        time: "2 hours",
+        badge: "History & Immersion",
+        desc: "Free admission for Singapore Citizens and PRs. Interactive glass-dome installations, historical story quests, and sensory exhibits for all ages.",
+        bondingTip: "Explore the 'Story of the Forest' projection dome together and find the nocturnal creatures.",
+        question: "If we had a time-travel machine that only worked once, which century would you take us to?"
+      },
+      {
+        id: 7,
+        title: "Jurong Lake Gardens Forest Ramble & Water Playground",
+        region: "west",
+        vibe: "active",
+        cost: "free",
+        age: "all",
+        location: "Lakeside MRT",
+        time: "2 – 3 hours",
+        badge: "Adventure Playground",
+        desc: "One of Singapore's largest nature playgrounds with 13 adventure play zones modeled after animals (otter hop, squirrel swings, heron glide).",
+        bondingTip: "Pack a change of clothes so your child can enjoy the free water play zone without worry.",
+        question: "If you could design an obstacle course just for me to try right now, what would be the hardest challenge?"
+      },
+      {
+        id: 8,
+        title: "Jacob Ballas Children's Garden Nature Scavenger Hunt",
+        region: "central",
+        vibe: "outdoors",
+        cost: "free",
+        age: "younger",
+        location: "Botanic Gardens MRT",
+        time: "1.5 – 2 hours",
+        badge: "Botanical Discovery",
+        desc: "Asia's first children's garden featuring tree houses, suspension bridges, water play, and a sensory farm demonstrating how vegetables and spices grow.",
+        bondingTip: "Walk through the sensory garden and see who can identify cinnamon and pandan leaves by scent alone.",
+        question: "If trees could whisper secrets to each other when no one was looking, what do you think they talk about?"
+      },
+      {
+        id: 9,
+        title: "Changi Airport Jewel Canopy Park & Forest Valley Walk",
+        region: "east",
+        vibe: "rainy",
+        cost: "free",
+        age: "all",
+        location: "Changi Airport MRT",
+        time: "2 – 3 hours",
+        badge: "Architecture & Air-Con",
+        desc: "Marvel at the world's tallest indoor waterfall, walk the lush indoor garden trails, and watch the evening light & music show in complete comfort.",
+        bondingTip: "Pick a quiet viewing bench on Level 3 to share dessert and watch the Skytrain glide past the falls.",
+        question: "If you were boarding an airplane tonight to anywhere in the world, what country would you point to?"
+      },
+      {
+        id: 10,
+        title: "Local Heritage Food Hunt & Hawker Tasting Tour",
+        region: "central",
+        vibe: "lowkey",
+        cost: "low",
+        age: "primary",
+        location: "Chinatown / Maxwell / Tiong Bahru MRT",
+        time: "1.5 – 2 hours",
+        badge: "Culture & Food",
+        desc: "Turn mealtime into an adventure: sample three classic local dishes together (such as nonya kueh, handmade popiah, or sugarcane juice) and rate each one.",
+        bondingTip: "Let your child hold the budget, order from the stall uncle/auntie, and collect the change to build independence.",
+        question: "If you opened your own food stall in Singapore, what secret dish would you invent?"
+      }
+    ];
+
+    // ==========================================
+    // The Connection Jar - Conversation Prompts
+    // ==========================================
+    const JAR_PROMPTS = [
+      { cat: "Imagination", prompt: "If our family had a private spaceship, which planet or moon would we land on for our first picnic?" },
+      { cat: "Curiosity", prompt: "What is something you learned this week—in school, a book, or from a friend—that made you go 'whoa'?" },
+      { cat: "Superpowers", prompt: "If you could have any animal's superpower for 24 hours, which animal would you pick and how would you use it?" },
+      { cat: "Favorites", prompt: "What is your absolute favorite comfort food when you've had a long, tiring day?" },
+      { cat: "Kindness", prompt: "Can you think of a moment recently when someone did something small that made you feel really happy or supported?" },
+      { cat: "Creativity", prompt: "If you were chosen to design a brand-new flavor of ice cream for Singapore, what ingredients would you mix together?" },
+      { cat: "Connection", prompt: "What is one thing you and I do together that always makes you laugh or smile?" },
+      { cat: "Dreams", prompt: "What is a project, hobby, or instrument you’ve always wanted to try building or playing?" },
+      { cat: "Observation", prompt: "Look around us right now—what is the most interesting or unusual detail you notice that I might have missed?" }
+    ];
+
+    let currentPromptIndex = 0;
+
+    function switchActivityMode(mode) {
+      const tabFinder = document.getElementById('tab-finder');
+      const tabJar = document.getElementById('tab-jar');
+      const viewFinder = document.getElementById('view-finder');
+      const viewJar = document.getElementById('view-jar');
+
+      if (mode === 'finder') {
+        tabFinder.classList.add('active');
+        tabJar.classList.remove('active');
+        viewFinder.style.display = 'block';
+        viewJar.style.display = 'none';
+      } else {
+        tabJar.classList.add('active');
+        tabFinder.classList.remove('active');
+        viewJar.style.display = 'block';
+        viewFinder.style.display = 'none';
+      }
+    }
+
+    function renderActivityCard(act) {
+      const display = document.getElementById('activity-result-display');
+      if (!act) {
+        display.innerHTML = `
+          <div class="activity-result-card" style="text-align:center; padding:36px;">
+            <p style="color:var(--color-text-muted); font-size:15px;">No exact match for those specific filters. Try setting 'Any Atmosphere' or 'Islandwide' to see more great Singapore experiences!</p>
+          </div>
+        `;
+        return;
+      }
+
+      display.innerHTML = `
+        <div class="activity-result-card">
+          <div class="result-badge-row">
+            <span class="tag-badge tag-free">${act.cost === 'free' ? '100% Free' : act.cost.toUpperCase()}</span>
+            <span class="tag-badge tag-region">📍 ${act.region.toUpperCase()} SINGAPORE</span>
+            <span class="tag-badge tag-vibe">${act.badge}</span>
+          </div>
+          <h3 class="result-title">${act.title}</h3>
+          <div class="result-meta">
+            <span>🚇 ${act.location}</span>
+            <span>⏱️ ${act.time}</span>
+          </div>
+          <p class="result-desc">${act.desc}</p>
+          <div class="result-conversation-box">
+            <strong>🤝 Bonding Idea:</strong> ${act.bondingTip}<br>
+            <strong style="margin-top:6px; display:inline-block;">💬 Question to Ask:</strong> <em>"${act.question}"</em>
+          </div>
+        </div>
+      `;
+    }
+
+    function filterActivities() {
+      const vibe = document.getElementById('filter-vibe').value;
+      const region = document.getElementById('filter-region').value;
+      const cost = document.getElementById('filter-cost').value;
+      const age = document.getElementById('filter-age').value;
+
+      const filtered = SINGAPORE_ACTIVITIES.filter(act => {
+        if (vibe !== 'all' && act.vibe !== vibe) return false;
+        if (region !== 'all' && act.region !== region) return false;
+        if (cost !== 'all' && act.cost !== cost) return false;
+        if (age !== 'all' && act.age !== 'all' && act.age !== age) return false;
+        return true;
+      });
+
+      if (filtered.length > 0) {
+        renderActivityCard(filtered[0]);
+      } else {
+        renderActivityCard(null);
+      }
+    }
+
+    function randomActivity() {
+      const randomIdx = Math.floor(Math.random() * SINGAPORE_ACTIVITIES.length);
+      renderActivityCard(SINGAPORE_ACTIVITIES[randomIdx]);
+    }
+
+    function resetFilters() {
+      document.getElementById('filter-vibe').value = 'all';
+      document.getElementById('filter-region').value = 'all';
+      document.getElementById('filter-cost').value = 'all';
+      document.getElementById('filter-age').value = 'all';
+      renderActivityCard(SINGAPORE_ACTIVITIES[0]);
+    }
+
+    function drawNextCard() {
+      currentPromptIndex = (currentPromptIndex + 1) % JAR_PROMPTS.length;
+      const p = JAR_PROMPTS[currentPromptIndex];
+      const catElem = document.getElementById('jar-card-cat');
+      const promptElem = document.getElementById('jar-card-prompt');
+
+      promptElem.style.opacity = '0';
+      setTimeout(() => {
+        catElem.innerText = p.cat;
+        promptElem.innerText = `"${p.prompt}"`;
+        promptElem.style.opacity = '1';
+      }, 150);
+    }
+
+    // Initialize with first activity on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderActivityCard(SINGAPORE_ACTIVITIES[0]);
+    });
   </script>
 </body>
 </html>
