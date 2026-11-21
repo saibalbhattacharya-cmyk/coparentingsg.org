@@ -428,6 +428,14 @@
       margin-bottom: 16px;
       box-shadow: 0 8px 24px rgba(15, 118, 110, 0.25);
       border: 4px solid #FFFFFF;
+      overflow: hidden;
+    }
+
+    .founder-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .founder-name {
@@ -1210,7 +1218,9 @@
     <div class="container">
       <div class="founder-card">
         <div class="founder-avatar-box">
-          <div class="founder-avatar">SB</div>
+          <div class="founder-avatar">
+            <img src="images/saibal-bhattacharya.jpg" alt="Saibal Bhattacharya, Founder of CoParenting SG" onerror="this.onerror=null; this.parentElement.innerText='SB';">
+          </div>
           <h3 class="founder-name">Saibal Bhattacharya</h3>
           <span class="founder-role">Founder & Initiative Lead</span>
         </div>
