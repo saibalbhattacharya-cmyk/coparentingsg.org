@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study: Transparent Child Maintenance & Enrichment Cost Sharing | CoParenting SG</title>
+  <meta name="description" content="Case study examining how Singapore co-parents eliminated recurring disputes over tuition fees, enrichment classes, and medical expenses with an agreed expense tiering model.">
+  <meta name="keywords" content="child maintenance Singapore calculation, tuition fee dispute divorce Singapore, enrichment cost sharing coparenting, child expense protocol Singapore">
+  <link rel="canonical" href="https://coparentingsg.org/case-study-shared-expense-tracking.html">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://coparentingsg.org/case-study-shared-expense-tracking.html">
+  <meta property="og:title" content="Case Study: Shared Child Expenses & Tuition Reimbursement in Singapore">
+  <meta property="og:description" content="How a pre-approval cap, digital ledger, and dedicated joint expense card ended monthly receipt friction for a 9-year-old child.">
+  <meta property="og:site_name" content="CoParenting SG">
+  <meta property="og:locale" content="en_SG">
+
+  <!-- Schema.org Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Creating a Transparent Formula for Enrichment, Tuition, and Medical Costs in Singapore",
+    "description": "How Singapore parents established a practical financial protocol for variable child expenses and maintenance.",
+    "url": "https://coparentingsg.org/case-study-shared-expense-tracking.html",
+    "publisher": {
+      "@type": "NGO",
+      "name": "CoParenting SG",
+      "url": "https://coparentingsg.org"
+    },
+    "inLanguage": "en-SG"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #0F766E;
+      --color-primary-dark: #0A4D48;
+      --color-primary-light: #14B8A6;
+      --color-accent-teal: #0D9488;
+      --color-teal-tint: #F0FDFA;
+      --color-teal-soft: #CCFBF1;
+      --color-teal-border: #99F6E4;
+      --color-card-bg: #FFFFFF;
+      --color-text-dark: #133E42;
+      --color-text-muted: #4B6B6F;
+      --color-border: #D7EAE7;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 2px 8px rgba(15, 118, 110, 0.05);
+      --shadow-md: 0 10px 25px -5px rgba(15, 118, 110, 0.09);
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-dark);
+      background-color: #FFFFFF;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--color-primary); text-decoration: none; transition: all 0.2s ease; }
+    a:hover { color: var(--color-primary-light); }
+    .container { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 1000;
+    }
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 76px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .brand-symbol {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 20px;
+      box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+    }
+    .brand-title {
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--color-primary-dark);
+      line-height: 1.1;
+    }
+    .brand-tagline {
+      font-size: 11px;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--color-text-dark);
+    }
+    .nav-links a:hover { color: var(--color-primary); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 13.5px;
+      cursor: pointer;
+    }
+    .btn-secondary {
+      background-color: #FFFFFF;
+      color: var(--color-primary);
+      border: 1.5px solid var(--color-primary);
+    }
+
+    /* Article Hero */
+    .article-hero {
+      background: linear-gradient(180deg, var(--color-teal-tint) 0%, #FFFFFF 100%);
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .breadcrumb {
+      display: flex;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+    }
+    .badge-pill {
+      display: inline-block;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 12px;
+      border-radius: 6px;
+      background-color: var(--color-teal-soft);
+      color: var(--color-primary-dark);
+      margin-bottom: 14px;
+    }
+    .article-title {
+      font-family: var(--font-display);
+      font-size: 36px;
+      color: var(--color-primary-dark);
+      line-height: 1.25;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+    .article-subtitle {
+      font-size: 17px;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      max-width: 820px;
+    }
+
+    /* Summary Metadata Card */
+    .summary-card {
+      background-color: #FFFFFF;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin: 36px 0 48px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    .summary-item strong {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+    .summary-item span {
+      font-size: 14.5px;
+      color: var(--color-text-dark);
+      font-weight: 600;
+    }
+
+    /* Content Layout */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 2.2fr 1fr;
+      gap: 48px;
+      padding: 20px 0 80px;
+    }
+    .content-body h2 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      color: var(--color-primary-dark);
+      margin: 36px 0 14px;
+      line-height: 1.3;
+    }
+    .content-body h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin: 24px 0 10px;
+    }
+    .content-body p {
+      font-size: 15px;
+      color: var(--color-text-dark);
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+    .content-body ul, .content-body ol {
+      margin: 12px 0 20px 24px;
+      font-size: 14.5px;
+      color: var(--color-text-dark);
+    }
+    .content-body li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .quote-box {
+      background-color: var(--color-teal-tint);
+      border-left: 4px solid var(--color-primary);
+      padding: 20px 24px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 28px 0;
+      font-style: italic;
+      color: var(--color-primary-dark);
+      font-size: 15px;
+    }
+    .protocol-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      font-size: 13.5px;
+    }
+    .protocol-table th, .protocol-table td {
+      border: 1px solid var(--color-border);
+      padding: 12px 14px;
+      text-align: left;
+    }
+    .protocol-table th {
+      background-color: var(--color-teal-tint);
+      color: var(--color-primary-dark);
+      font-weight: 700;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+    .sidebar-widget {
+      background-color: #FFFFFF;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .sidebar-widget h4 {
+      font-size: 15px;
+      color: var(--color-primary-dark);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .sidebar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .sidebar-list a {
+      font-size: 13.5px;
+      color: var(--color-text-dark);
+      line-height: 1.45;
+      display: block;
+    }
+    .sidebar-list a:hover { color: var(--color-primary); }
+
+    /* Footer */
+    footer {
+      background-color: #073539;
+      color: #FFFFFF;
+      padding: 64px 0 32px;
+      font-size: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 18px;
+      color: #99F6E4;
+    }
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-col a { color: #CCFBF1; font-size: 13px; }
+    .footer-col a:hover { color: #FFFFFF; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      color: #99F6E4;
+      font-size: 12px;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 900px) {
+      .article-layout, .footer-grid { grid-template-columns: 1fr; }
+      .article-title { font-size: 27px; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <div class="brand-symbol">C</div>
+        <div class="brand-text">
+          <span class="brand-title">CoParenting SG</span>
+          <span class="brand-tagline">coparentingsg.org</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#founder">About Founder</a></li>
+        <li><a href="case-studies.html" style="color:var(--color-primary); font-weight:700;">Case Studies</a></li>
+        <li><a href="index.html#planner">Parenting Plan</a></li>
+        <li><a href="index.html#faq">Questions & Answers</a></li>
+        <li><a href="index.html#resources">Singapore Resources</a></li>
+        <li><a href="index.html#contact" class="btn btn-secondary">Get In Touch</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="article-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> <a href="case-studies.html">Case Studies</a> <span>/</span> <span>Maintenance & Shared Expenses</span>
+      </div>
+      <span class="badge-pill">Practical Case Study #3</span>
+      <h1 class="article-title">Creating a Transparent Formula for Enrichment, Tuition, and Medical Costs</h1>
+      <p class="article-subtitle">
+        How separated parents in Singapore transitioned from adversarial monthly receipt audits to a three-tier expense protocol, pre-approved enrichment caps, and a dedicated shared child account.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Body -->
+  <div class="container">
+    <div class="summary-card">
+      <div class="summary-item">
+        <strong>Family Profile</strong>
+        <span>1 Child (Age 9, Primary 3)</span>
+      </div>
+      <div class="summary-item">
+        <strong>Maintenance Framework</strong>
+        <span>Fixed monthly base + 50/50 agreed extras</span>
+      </div>
+      <div class="summary-item">
+        <strong>Core Dispute</strong>
+        <span>Unilateral enrichment sign-ups, delayed reimbursements & receipt auditing</span>
+      </div>
+      <div class="summary-item">
+        <strong>Resolution Method</strong>
+        <span>Tiered Expense Protocol & Shared Digital Ledger</span>
+      </div>
+    </div>
+
+    <div class="article-layout">
+      <main class="content-body">
+        <h2>1. The Monthly Receipt Battleground</h2>
+        <p>
+          In Singapore, child maintenance orders under Section 68 and 69 of the Women's Charter routinely distinguish between fixed basic maintenance (food, standard transport, household shelter) and variable extraordinary expenses (specialist medical bills, insurance premiums, enrichment tuition, and school-mandated computing devices).
+        </p>
+        <p>
+          In this scenario, Ken and Fiona agreed during their divorce to a base monthly maintenance payment of $1,000 paid by Ken to Fiona, with all "reasonable enrichment, medical, and education costs split equally (50/50)."
+        </p>
+        <p>
+          Within eighteen months, the arrangement collapsed into constant WhatsApp hostility:
+        </p>
+        <ul>
+          <li><strong>Unilateral sign-ups:</strong> Fiona enrolled their son in competitive swimming lessons ($380/month) and Olympiad science coaching ($420/month) without prior discussion, sending Ken invoices after the fact and expecting immediate PayNow reimbursements.</li>
+          <li><strong>Late settlements and withholding:</strong> Frustrated by what he viewed as unconsulted lifestyle inflation, Ken began scrutinising every pharmacy receipt and delaying payments for weeks.</li>
+          <li><strong>Child caught in the crossfire:</strong> On several occasions, the child was told by one parent: <em>"Ask your father why your coding class isn't paid yet."</em></li>
+        </ul>
+
+        <div class="quote-box">
+          "Every single month ended with an argument over twenty-dollar receipts. We were treating each other like fraudulent vendors rather than the parents of a 9-year-old boy."
+        </div>
+
+        <h2>2. Key Structural Flaws</h2>
+        <p>
+          The mediator identified that the word "reasonable" without an operational dollar limit is an invitation to conflict. In Singapore's competitive academic environment, what one parent views as an essential academic necessity, the other may view as discretionary or excessive.
+        </p>
+        <p>
+          Furthermore, sending ad-hoc receipts on personal messaging apps meant financial discussions constantly invaded ordinary day-to-day parenting communications.
+        </p>
+
+        <h2>3. The Solution: The "Three-Tier Expense Framework"</h2>
+        <p>
+          Ken and Fiona agreed to restructure all child expenditures into three transparent operational tiers:
+        </p>
+
+        <table class="protocol-table">
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Category Covered</th>
+              <th>Approval & Payment Protocol</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Tier 1: Basic Maintenance</strong></td>
+              <td>Food, clothes, pocket money, utilities, daily commute</td>
+              <td>Covered fully by the fixed monthly baseline ($1,000 paid via auto-GIRO on the 1st of every month). No receipt submission required.</td>
+            </tr>
+            <tr>
+              <td><strong>Tier 2: Essential Education & Healthcare</strong></td>
+              <td>MOE school fees, MOE textbooks, uniforms, Integrated Shield Plan premiums, acute clinic visits</td>
+              <td>Split 50/50 automatically. Uploaded to a shared Google Sheet by the 25th of each month; reconciled and settled by the 28th.</td>
+            </tr>
+            <tr>
+              <td><strong>Tier 3: Discretionary Enrichment & Tuition</strong></td>
+              <td>Music, private sports coaching, external tuition centers, holiday coding camps</td>
+              <td><strong>Rule of Prior Written Agreement:</strong> Requires 14 days written consent prior to enrollment. Capped at an agreed aggregate maximum of $600/month ($300 each). Any excess cost incurred without mutual consent is borne 100% by the enrolling parent.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>The Joint Debit Account & Shared Ledger</h3>
+        <p>To eliminate the emotional friction of manual reimbursements:</p>
+        <ol>
+          <li><strong>Dedicated Expense Account:</strong> The parents established a joint bank account linked to two debit cards used exclusively for the child's school fees, textbook purchases, and clinic visits.</li>
+          <li><strong>Monthly GIRO Inflows:</strong> Both parents set up recurring automated transfers on the 1st of the month, ensuring funds were always available in advance rather than chased in arrears.</li>
+          <li><strong>No Money Talk with the Child:</strong> A strict non-disparagement clause was agreed: neither parent would ever discuss tuition invoices, delays, or cost contributions in the presence or hearing of the child.</li>
+        </ol>
+
+        <h2>4. The Outcome and Key Takeaway for Singapore Parents</h2>
+        <p>
+          Within three months, financial friction ceased completely. Fiona retained autonomy over daily routines without having to justify small purchases, while Ken gained budget predictability and veto power over new high-cost enrichment programs.
+        </p>
+        <p>
+          For separated parents in Singapore, the takeaway is decisive: <strong>separate routine living maintenance from discretionary enrichment</strong>. Establish written spending caps, set up recurring automated transfers, and use a neutral shared ledger to keep financial bookkeeping completely decoupled from your relationship with your child.
+        </p>
+      </main>
+
+      <aside class="sidebar">
+        <div class="sidebar-widget">
+          <h4>Related Case Studies</h4>
+          <ul class="sidebar-list">
+            <li><a href="case-study-school-holidays.html">→ Navigating the 6-Week MOE Year-End School Holidays</a></li>
+            <li><a href="case-study-primary-school-transition.html">→ Managing Primary One Registration Across Singapore</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget" style="background-color:var(--color-teal-tint); border-color:var(--color-teal-border);">
+          <h4>Calculate & Plan Shared Costs</h4>
+          <p style="font-size:13.5px; color:var(--color-text-muted); margin-bottom:14px;">
+            Review our essential Singapore parenting plan checklist for financial contribution formulas and medical coverage clauses.
+          </p>
+          <a href="index.html#planner" class="btn btn-primary" style="width:100%; text-align:center;">
+            Open Checklist Tool
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-title" style="color:#FFFFFF; margin-bottom:12px;">CoParenting SG</div>
+          <p style="color:#CCFBF1; line-height:1.6; max-width:380px; opacity:0.9;">
+            Dedicated to promoting constructive, child-centred co-parenting relationships across Singapore. Serving families with empathy, clarity, and practical guidance.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html#about">About the Initiative</a></li>
+            <li><a href="index.html#founder">About Founder</a></li>
+            <li><a href="case-studies.html">Case Studies Directory</a></li>
+            <li><a href="index.html#planner">Parenting Plan Checklist</a></li>
+            <li><a href="index.html#resources">Singapore Directory</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Notice</h4>
+          <ul>
+            <li><a href="#">Singapore PDPA Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Disclaimer Notice</a></li>
+            <li><a href="index.html#contact">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 CoParenting SG (coparentingsg.org). All rights reserved.</div>
+        <div>For educational purposes only; does not constitute formal legal counsel.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
