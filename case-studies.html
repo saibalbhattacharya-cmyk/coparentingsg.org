@@ -7,6 +7,7 @@
   <meta name="description" content="Explore real-world co-parenting case studies tailored for Singaporeans and expats. Filter scenarios for Singaporeans with kids locally or overseas, and expats navigating international custody.">
   <meta name="keywords" content="coparenting case studies Singapore, expat divorce Singapore custody, Hague Convention relocation Singapore, MOE holiday schedule custody, international school fees coparenting">
   <link rel="canonical" href="https://coparentingsg.org/case-studies.html">
+  <link rel="icon" type="image/svg+xml" href="images/logo-tree.svg">
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:type" content="article">
@@ -15,6 +16,13 @@
   <meta property="og:description" content="Practical, child-first case studies showing how Singaporean and expatriate parents resolve holiday sharing, international school fees, cross-border relocation, and long-distance access.">
   <meta property="og:site_name" content="CoParenting SG">
   <meta property="og:locale" content="en_SG">
+  <meta property="og:image" content="https://coparentingsg.org/images/saibal-bhattacharya.jpg">
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Singapore Co-Parenting Case Studies | CoParenting SG">
+  <meta name="twitter:description" content="Explore practical local and expatriate case studies for separated parents in Singapore.">
+  <meta name="twitter:image" content="https://coparentingsg.org/images/saibal-bhattacharya.jpg">
 
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -92,17 +100,20 @@
       text-decoration: none;
     }
     .brand-symbol {
-      width: 42px;
-      height: 42px;
-      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+      width: 44px;
+      height: 44px;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #FFFFFF;
-      font-weight: 700;
-      font-size: 20px;
-      box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+      box-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .brand-symbol img {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
     .brand-text { display: flex; flex-direction: column; }
     .brand-title {
@@ -424,7 +435,9 @@
   <header>
     <div class="container nav-wrapper">
       <a href="index.html" class="brand">
-        <div class="brand-symbol">C</div>
+        <div class="brand-symbol">
+          <img src="images/logo-tree.svg" alt="CoParenting SG Logo — Tree of Life Canopy">
+        </div>
         <div class="brand-text">
           <span class="brand-title">CoParenting SG</span>
           <span class="brand-tagline">coparentingsg.org</span>
@@ -650,7 +663,15 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="brand-title" style="color:#FFFFFF; margin-bottom:12px;">CoParenting SG</div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+            <div class="brand-symbol" style="box-shadow: 0 4px 14px rgba(0,0,0,0.3);">
+              <img src="images/logo-tree.svg" alt="CoParenting SG Logo">
+            </div>
+            <div>
+              <div class="brand-title" style="color:#FFFFFF; line-height:1.1;">CoParenting SG</div>
+              <div class="brand-tagline" style="color:#99F6E4;">coparentingsg.org</div>
+            </div>
+          </div>
           <p style="color:#CCFBF1; line-height:1.6; max-width:380px; opacity:0.9;">
             Dedicated to promoting constructive, child-centred co-parenting relationships across Singapore. Serving local and expatriate families with empathy, clarity, and practical guidance.
           </p>

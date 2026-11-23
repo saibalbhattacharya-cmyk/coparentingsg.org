@@ -7,6 +7,7 @@
   <meta name="description" content="Empowering separated and divorced parents in Singapore to build constructive, child-first co-parenting partnerships with practical tools, parenting plans, and mediation resources.">
   <meta name="keywords" content="coparenting Singapore, parenting plan Singapore, child custody Singapore, divorce mediation Singapore, Family Justice Courts Singapore, separated parents support">
   <link rel="canonical" href="https://coparentingsg.org/">
+  <link rel="icon" type="image/svg+xml" href="images/logo-tree.svg">
 
   <!-- Open Graph Meta Tags (for WhatsApp, Facebook, LinkedIn previews) -->
   <meta property="og:type" content="website">
@@ -15,11 +16,13 @@
   <meta property="og:description" content="Practical tools, parenting plans, and dispute-resolution resources designed to help separated parents in Singapore put children first.">
   <meta property="og:site_name" content="CoParenting SG">
   <meta property="og:locale" content="en_SG">
+  <meta property="og:image" content="https://coparentingsg.org/images/saibal-bhattacharya.jpg">
 
   <!-- Twitter Card Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="CoParenting SG | Child-Centred Support in Singapore">
   <meta name="twitter:description" content="Empowering separated and divorced parents in Singapore with constructive frameworks, schedules, and mediation guidance.">
+  <meta name="twitter:image" content="https://coparentingsg.org/images/saibal-bhattacharya.jpg">
 
   <!-- Schema.org JSON-LD (Google Rich Search Snippet) -->
   <script type="application/ld+json">
@@ -195,17 +198,20 @@
     }
 
     .brand-symbol {
-      width: 42px;
-      height: 42px;
-      background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+      width: 44px;
+      height: 44px;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #FFFFFF;
-      font-weight: 700;
-      font-size: 20px;
-      box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
+      box-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .brand-symbol img {
+      width: 100%;
+      height: 100%;
+      display: block;
     }
 
     .brand-text {
@@ -435,6 +441,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center 25%;
       display: block;
     }
 
@@ -1151,7 +1158,9 @@
   <header>
     <div class="container nav-wrapper">
       <a href="#" class="brand">
-        <div class="brand-symbol">C</div>
+        <div class="brand-symbol">
+          <img src="images/logo-tree.svg" alt="CoParenting SG Logo — Tree of Life Canopy">
+        </div>
         <div class="brand-text">
           <span class="brand-title">CoParenting SG</span>
           <span class="brand-tagline">coparentingsg.org</span>
@@ -1699,7 +1708,15 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="brand-title" style="color:#FFFFFF; margin-bottom:12px;">CoParenting SG</div>
+          <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+            <div class="brand-symbol" style="box-shadow: 0 4px 14px rgba(0,0,0,0.3);">
+              <img src="images/logo-tree.svg" alt="CoParenting SG Logo">
+            </div>
+            <div>
+              <div class="brand-title" style="color:#FFFFFF; line-height:1.1;">CoParenting SG</div>
+              <div class="brand-tagline" style="color:#99F6E4;">coparentingsg.org</div>
+            </div>
+          </div>
           <p style="color:#CCFBF1; line-height:1.6; max-width:380px; opacity:0.9;">
             Dedicated to promoting constructive, child-centred co-parenting relationships across Singapore. Serving families with empathy, clarity, and practical guidance.
           </p>

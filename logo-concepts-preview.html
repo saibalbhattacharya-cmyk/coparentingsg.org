@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoParenting SG — Singapore-Themed Brand Logo Concepts (100% Free SVG)</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --primary: #0F766E;
+      --primary-dark: #0A4D48;
+      --primary-light: #14B8A6;
+      --teal-tint: #F0FDFA;
+      --teal-soft: #CCFBF1;
+      --teal-border: #99F6E4;
+      --sg-red: #E11D48;
+      --sg-red-soft: #FFE4E6;
+      --text: #0F172A;
+      --text-muted: #475569;
+      --border: #E2E8F0;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 12px rgba(15,118,110,0.08);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-display: 'Playfair Display', Georgia, serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      padding: 40px 24px 80px;
+    }
+    .container { max-width: 1120px; margin: 0 auto; }
+
+    .header-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color: #FFFFFF;
+      padding: 36px;
+      border-radius: 16px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 25px -3px rgba(15,118,110,0.15);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 5px 14px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.18);
+      color: #CCFBF1;
+      margin-bottom: 12px;
+    }
+    .header-banner h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .header-banner p {
+      font-size: 15px;
+      color: #E2E8F0;
+      max-width: 820px;
+      line-height: 1.5;
+    }
+
+    .section-intro {
+      margin: 32px 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+    .section-intro h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-intro p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 26px;
+      margin-bottom: 36px;
+    }
+
+    .concept-card {
+      background: #FFFFFF;
+      border: 1.5px solid var(--border);
+      border-radius: 16px;
+      padding: 26px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .concept-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    .featured-tag {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      background: linear-gradient(135deg, #E11D48, #BE123C);
+      color: #FFFFFF;
+      font-size: 10.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(225, 29, 72, 0.35);
+    }
+
+    .preview-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      min-height: 120px;
+      position: relative;
+    }
+    .preview-box.tint {
+      background: linear-gradient(180deg, #F0FDFA 0%, #FFFFFF 100%);
+    }
+
+    .concept-title {
+      font-size: 17.5px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+    .concept-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 14px;
+    }
+    .concept-meta {
+      font-size: 11.5px;
+      color: var(--primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+      margin-top: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sg-accent {
+      color: var(--sg-red);
+      font-weight: 700;
+    }
+
+    .info-box {
+      background: var(--teal-tint);
+      border: 1.5px solid var(--teal-border);
+      border-radius: 14px;
+      padding: 26px 30px;
+      margin-top: 24px;
+    }
+    .info-box h3 {
+      font-size: 17px;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+    .info-box p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header-banner">
+      <span class="badge">🇸🇬 Singapore Heritage & Identity · 100% Free Vector SVG</span>
+      <h1>CoParenting SG — Singapore-Inspired Logo Concepts</h1>
+      <p>
+        These new concepts weave recognizable Singaporean motifs—the <strong>Garden City Supertree canopy</strong>, the <strong>Vanda Miss Joaquim orchid bloom</strong>, the <strong>Jubilee & Helix pedestrian bridges</strong>, and the <strong>Crescent & 5 Stars of shared guidance</strong>—into warm, child-centred co-parenting symbols.
+      </p>
+    </div>
+
+    <!-- Section: Singapore Heritage Concepts -->
+    <div class="section-intro">
+      <h2>🇸🇬 Singapore Architectural & Heritage Motifs</h2>
+      <p>Blends iconic Singapore culture with low-conflict family collaboration</p>
+    </div>
+
+    <div class="grid">
+
+      <!-- Concept 1: The Singapore Orchid Bloom (Vanda Petals) -->
+      <div class="concept-card">
+        <span class="featured-tag">Very Singaporean</span>
+        <div>
+          <div class="preview-box tint">
+            <svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Orchid Petal Motif: 2 outer parent petals embracing central bud -->
+              <g transform="translate(6, 6)">
+                <!-- Left Parent Petal (Deep Teal) -->
+                <path d="M24 46C14 46 8 36 10 24C12 12 24 6 24 6C24 6 22 18 24 30C25 38 27 43 24 46Z" fill="#0F766E"/>
+                <!-- Right Parent Petal (Vibrant Teal) -->
+                <path d="M24 46C34 46 40 36 38 24C36 12 24 6 24 6C24 6 26 18 24 30C23 38 21 43 24 46Z" fill="#14B8A6"/>
+                <!-- Top Canopy Petal -->
+                <ellipse cx="24" cy="11" rx="8" ry="6" fill="#0D9488" opacity="0.85"/>
+                <!-- Central Bud / Child (Warm Singapore Red-Coral Accent) -->
+                <circle cx="24" cy="26" r="4.5" fill="#E11D48"/>
+                <path d="M21 33C21 33 24 38 24 39C24 38 27 33 27 33C29 30 27 27 24 27C21 27 19 30 21 33Z" fill="#E11D48" opacity="0.9"/>
+                <!-- Little connecting stem -->
+                <circle cx="24" cy="46" r="2" fill="#0A4D48"/>
+              </g>
+              <!-- Text -->
+              <text x="64" y="27" font-family="-apple-system, sans-serif" font-weight="800" font-size="16.5" fill="#0A4D48" letter-spacing="-0.3">CoParenting<tspan fill="#E11D48">.SG</tspan></text>
+              <text x="64" y="42" font-family="-apple-system, sans-serif" font-weight="700" font-size="8.5" fill="#0F766E" letter-spacing="1.4">BLOOMING TOGETHER</text>
+            </svg>
+          </div>
+          <h3 class="concept-title">Concept 1: The Singapore Vanda Bloom</h3>
+          <p class="concept-desc">
+            Inspired by Singapore's national flower (Vanda Miss Joaquim). Two elegant teal petals curve inward like caring parents sheltering a vibrant crimson-coral orchid bud in the center. Resilient, flourishing, and uniquely Singapore.
+          </p>
+        </div>
+        <div class="concept-meta">
+          <span>National Flower Motif</span>
+          <span class="sg-accent">Teal + Crimson Dot</span>
+        </div>
+      </div>
+
+      <!-- Concept 2: The Garden City Canopy (Supertree & Banyan) -->
+      <div class="concept-card">
+        <span class="featured-tag">Garden City</span>
+        <div>
+          <div class="preview-box">
+            <svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Supertree / Banyan Tree of Life Canopy -->
+              <g transform="translate(8, 8)">
+                <!-- Left Trunk & Branch (Mother) -->
+                <path d="M20 44C20 34 16 26 8 20C14 18 20 22 22 28C22 34 22 40 20 44Z" fill="#0F766E"/>
+                <!-- Right Trunk & Branch (Father) -->
+                <path d="M26 44C26 34 30 26 38 20C32 18 26 22 24 28C24 34 24 40 26 44Z" fill="#14B8A6"/>
+                <!-- Meeting Canopy Arc (Shelter for Child) -->
+                <path d="M6 18C14 8 32 8 40 18C34 14 12 14 6 18Z" fill="#0D9488"/>
+                <!-- Central child figure resting safely under canopy -->
+                <circle cx="23" cy="20" r="3.5" fill="#F59E0B"/>
+                <path d="M19 32C19 27 27 27 27 32" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"/>
+                <!-- Roots joining in unity -->
+                <path d="M14 44H32" stroke="#0A4D48" stroke-width="2.5" stroke-linecap="round"/>
+              </g>
+              <!-- Text -->
+              <text x="64" y="27" font-family="-apple-system, sans-serif" font-weight="800" font-size="16.5" fill="#0A4D48" letter-spacing="-0.3">CoParenting<tspan fill="#0F766E"> SG</tspan></text>
+              <text x="64" y="42" font-family="-apple-system, sans-serif" font-weight="700" font-size="8.5" fill="#4B6B6F" letter-spacing="1.2">OUR CITY · OUR CHILDREN</text>
+            </svg>
+          </div>
+          <h3 class="concept-title">Concept 2: The Garden City Tree of Life</h3>
+          <p class="concept-desc">
+            Echoes Singapore's iconic Gardens by the Bay Supertrees and ancient heritage Rain Trees. Two sturdy tree trunks merge their branches upward to create a lush, sheltering canopy over the child.
+          </p>
+        </div>
+        <div class="concept-meta">
+          <span>Heritage Rain Tree Canopy</span>
+          <span>Nature & Growth</span>
+        </div>
+      </div>
+
+      <!-- Concept 3: The Crescent & Stars Guide (Singapore Flag Symbolism) -->
+      <div class="concept-card">
+        <span class="featured-tag">National Emblem</span>
+        <div>
+          <div class="preview-box tint">
+            <svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(6, 6)">
+                <!-- Crescent moon (Embracing parent / young nation on the ascendant) -->
+                <path d="M30 4C18 8 10 20 12 34C14 44 24 50 34 48C24 47 16 40 16 30C16 18 22 10 30 4Z" fill="#0F766E"/>
+                <!-- Opposite balancing arc (Second parent completing the embrace) -->
+                <path d="M26 48C36 44 42 34 40 22C38 14 32 8 24 6C32 9 36 18 34 26C32 36 26 44 26 48Z" fill="#14B8A6"/>
+                <!-- Central child star flanked by smaller guiding stars -->
+                <!-- Center star (Child) -->
+                <polygon points="26,18 27.5,22 32,22 28.5,24.5 30,29 26,26 22,29 23.5,24.5 20,22 24.5,22" fill="#E11D48"/>
+                <!-- Mini companion stars (Community & Support) -->
+                <circle cx="21" cy="13" r="1.5" fill="#0D9488"/>
+                <circle cx="31" cy="13" r="1.5" fill="#0D9488"/>
+                <circle cx="18" cy="24" r="1.5" fill="#0D9488"/>
+                <circle cx="34" cy="24" r="1.5" fill="#0D9488"/>
+              </g>
+              <!-- Text -->
+              <text x="64" y="27" font-family="-apple-system, sans-serif" font-weight="800" font-size="16.5" fill="#0A4D48" letter-spacing="-0.3">CoParenting<tspan fill="#E11D48"> SG</tspan></text>
+              <text x="64" y="42" font-family="-apple-system, sans-serif" font-weight="700" font-size="8.5" fill="#0D9488" letter-spacing="1.4">GUIDED BY PURPOSE</text>
+            </svg>
+          </div>
+          <h3 class="concept-title">Concept 3: The Crescent & Guiding Stars</h3>
+          <p class="concept-desc">
+            Directly draws on Singapore's state crescent and five stars—re-imagined as two embracing arcs representing parents rising together, with a prominent crimson star representing the child guided by calm, peaceful constancy.
+          </p>
+        </div>
+        <div class="concept-meta">
+          <span>Crescent & Stars Geometry</span>
+          <span class="sg-accent">Singapore Red Accent</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Section: Landmark & Community Concepts -->
+    <div class="section-intro">
+      <h2>🌉 Bridges & HDB Community Motifs</h2>
+      <p>Symbolising connection across two households and neighbourhood roots</p>
+    </div>
+
+    <div class="grid">
+
+      <!-- Concept 4: The Jubilee & Marina Bay Bridge (Two Spans, One River) -->
+      <div class="concept-card">
+        <div>
+          <div class="preview-box">
+            <svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Jubilee Bridge / Singapore River Crossing -->
+              <g transform="translate(6, 12)">
+                <!-- Left bridge span (Parent 1) -->
+                <path d="M4 32C12 20 22 18 26 24" stroke="#0F766E" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <!-- Right bridge span (Parent 2) -->
+                <path d="M48 32C40 20 30 18 26 24" stroke="#14B8A6" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <!-- Center meeting arch where child stands safely -->
+                <circle cx="26" cy="14" r="3.5" fill="#0A4D48"/>
+                <path d="M22 23C22 19 30 19 30 23" stroke="#0A4D48" stroke-width="2" stroke-linecap="round"/>
+                <!-- Singapore River Water Ripple underneath -->
+                <path d="M8 38C14 36 18 40 24 38C30 36 34 40 44 38" stroke="#CCFBF1" stroke-width="2" stroke-linecap="round"/>
+              </g>
+              <!-- Text -->
+              <text x="64" y="27" font-family="-apple-system, sans-serif" font-weight="800" font-size="16.5" fill="#0A4D48" letter-spacing="-0.3">CoParenting<tspan fill="#0F766E"> SG</tspan></text>
+              <text x="64" y="42" font-family="-apple-system, sans-serif" font-weight="700" font-size="8.5" fill="#4B6B6F" letter-spacing="1.2">BRIDGING TWO WORLDS</text>
+            </svg>
+          </div>
+          <h3 class="concept-title">Concept 4: The Singapore River Bridge</h3>
+          <p class="concept-desc">
+            Inspired by Singapore's iconic bridges (Jubilee, Helix, and Anderson Bridge across the Singapore River). Two arching pedestrian spans meet seamlessly in the middle to carry the child safely across calm water.
+          </p>
+        </div>
+        <div class="concept-meta">
+          <span>Singapore River Landmark</span>
+          <span>Seamless Connection</span>
+        </div>
+      </div>
+
+      <!-- Concept 5: The "Two Blocks, One Playground" (HDB Heartlands) -->
+      <div class="concept-card">
+        <div>
+          <div class="preview-box tint">
+            <svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(6, 10)">
+                <!-- Left HDB block outline (Parent Home 1) -->
+                <rect x="6" y="14" width="14" height="26" rx="2" stroke="#0F766E" stroke-width="2.5" fill="#F0FDFA"/>
+                <!-- Little window grid -->
+                <line x1="10" y1="19" x2="16" y2="19" stroke="#0F766E" stroke-width="1.5"/>
+                <line x1="10" y1="26" x2="16" y2="26" stroke="#0F766E" stroke-width="1.5"/>
+                <line x1="10" y1="33" x2="16" y2="33" stroke="#0F766E" stroke-width="1.5"/>
+
+                <!-- Right HDB block outline (Parent Home 2) -->
+                <rect x="32" y="14" width="14" height="26" rx="2" stroke="#14B8A6" stroke-width="2.5" fill="#F0FDFA"/>
+                <line x1="36" y1="19" x2="42" y2="19" stroke="#14B8A6" stroke-width="1.5"/>
+                <line x1="36" y1="26" x2="42" y2="26" stroke="#14B8A6" stroke-width="1.5"/>
+                <line x1="36" y1="33" x2="42" y2="33" stroke="#14B8A6" stroke-width="1.5"/>
+
+                <!-- Center: The iconic heartland mosaic playground swing / arch -->
+                <path d="M19 40C20 28 32 28 33 40" stroke="#E11D48" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <!-- Child swinging in center -->
+                <circle cx="26" cy="24" r="3" fill="#E11D48"/>
+              </g>
+              <!-- Text -->
+              <text x="64" y="27" font-family="-apple-system, sans-serif" font-weight="800" font-size="16.5" fill="#0A4D48" letter-spacing="-0.3">CoParenting<tspan fill="#0F766E"> SG</tspan></text>
+              <text x="64" y="42" font-family="-apple-system, sans-serif" font-weight="700" font-size="8.5" fill="#0D9488" letter-spacing="1">TWO HOMES · ONE CHILDHOOD</text>
+            </svg>
+          </div>
+          <h3 class="concept-title">Concept 5: The Heartland Courtyard</h3>
+          <p class="concept-desc">
+            Deeply relatable for Singapore heartlanders: two clean residential blocks (mom's home and dad's home) connected by a central community playground where the child plays freely between both.
+          </p>
+        </div>
+        <div class="concept-meta">
+          <span>Singapore Heartlands & HDB</span>
+          <span>Community & Childhood</span>
+        </div>
+      </div>
+
+      <!-- Concept 6: Modern Monogram with Lion City Shield -->
+      <div class="concept-card">
+        <div>
+          <div class="preview-box">
+            <svg width="240" height="60" viewBox="0 0 240 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(8, 6)">
+                <!-- Modern Rounded Hexagonal Badge / Shield -->
+                <rect x="4" y="4" width="40" height="40" rx="10" fill="url(#tealGrad)"/>
+                <!-- Interlocking 'C' and 'P' with a subtle Singapore red dot -->
+                <path d="M26 14C19 14 15 18 15 24C15 30 19 34 26 34" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+                <!-- Child red dot inside the curve -->
+                <circle cx="26" cy="24" r="3.5" fill="#FFE4E6" stroke="#E11D48" stroke-width="1.5"/>
+                <!-- Little red star in top corner -->
+                <circle cx="36" cy="12" r="2" fill="#E11D48"/>
+              </g>
+              <defs>
+                <linearGradient id="tealGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0F766E"/>
+                  <stop offset="1" stop-color="#0A4D48"/>
+                </linearGradient>
+              </defs>
+              <!-- Text -->
+              <text x="64" y="27" font-family="-apple-system, sans-serif" font-weight="800" font-size="16.5" fill="#0A4D48" letter-spacing="-0.3">CoParenting<tspan fill="#0F766E"> SG</tspan></text>
+              <text x="64" y="42" font-family="-apple-system, sans-serif" font-weight="700" font-size="8.5" fill="#4B6B6F" letter-spacing="1.5">coparentingsg.org</text>
+            </svg>
+          </div>
+          <h3 class="concept-title">Concept 6: The Singapore App Monogram</h3>
+          <p class="concept-desc">
+            A sleek, modern Singapore digital badge style (reminiscent of Singpass, LifeSG, and GovTech app design). An interlocking "C" with a central child heart-dot and a subtle crimson star accent.
+          </p>
+        </div>
+        <div class="concept-meta">
+          <span>Modern GovTech / LifeSG Style</span>
+          <span>Clean App Icon</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Summary Box -->
+    <div class="info-box">
+      <h3>Which direction resonates most with your vision for CoParenting SG?</h3>
+      <p>
+        All 6 concepts above are 100% vector SVG, load instantaneously, and require zero legal registration or fees to use.
+      </p>
+      <ul style="margin: 10px 0 0 20px; font-size: 13.5px; color: var(--text-muted); line-height: 1.6;">
+        <li><strong>Concept 1 (Vanda Bloom):</strong> Most culturally poetic and graceful—evokes Singapore's national flower nurturing a young bud.</li>
+        <li><strong>Concept 2 (Garden City Tree):</strong> Stately, organic, and rooted—symbolising the famous greenery that shades Singapore families.</li>
+        <li><strong>Concept 3 (Crescent & Stars):</strong> Boldest national symbolism—reinterpreting the state emblem into parental guidance.</li>
+        <li><strong>Concept 4 (River Bridge):</strong> Professional, clean, and infrastructural—bridges the gap between two homes.</li>
+        <li><strong>Concept 5 (Heartland Courtyard):</strong> Most approachable for everyday heartland parents.</li>
+      </ul>
+      <p style="margin-top: 12px; font-weight: 600; color: var(--primary-dark);">
+        Tell me which number you prefer (or what you'd like to combine), and I will embed it directly into your website header across all pages!
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>

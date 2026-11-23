@@ -1,0 +1,23 @@
+<svg width="42" height="42" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="44" height="44" rx="10" fill="url(#treeGrad)"/>
+  <defs>
+    <linearGradient id="treeGrad" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F766E"/>
+      <stop offset="1" stop-color="#0A4D48"/>
+    </linearGradient>
+  </defs>
+  <!-- Supertree / Tree of Life Canopy & Parents -->
+  <g transform="translate(0, -1)">
+    <!-- Left Branch / Parent (Soft Teal) -->
+    <path d="M19 36C19 28 15 21 8 16C13 14 19 18 21 23C21 28 21 33 19 36Z" fill="#2DD4BF"/>
+    <!-- Right Branch / Parent (Bright Mint) -->
+    <path d="M25 36C25 28 29 21 36 16C31 14 25 18 23 23C23 28 23 33 25 36Z" fill="#5EEAD4"/>
+    <!-- Sheltering Top Canopy Arc -->
+    <path d="M7 15C14 6 30 6 37 15C31 11 13 11 7 15Z" fill="#99F6E4"/>
+    <!-- Central Child Figure (Warm Amber/Coral) -->
+    <circle cx="22" cy="18" r="3.2" fill="#FBBF24"/>
+    <path d="M18 28C18 23 26 23 26 28" stroke="#FBBF24" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Ground / Foundation Line -->
+    <path d="M13 36H31" stroke="#2DD4BF" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

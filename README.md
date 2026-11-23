@@ -19,7 +19,7 @@ All core website files are located in your local folder:
 `/Users/saibalbhattacharya/Library/CloudStorage/OneDrive - bolttech/Goals 2026/coparentingsg-website/`
 
 Files to commit and push:
-- `index.html` (Main website code with Case Studies navigation and promo banner)
+- `index.html` (Main website code with official Tree of Life SVG logo, founder photo, and toolkits)
 - `case-studies.html` (Central hub with 4 resident segment filters: Singaporeans local, Singaporeans overseas, Expats local, Expats overseas)
 - `case-study-school-holidays.html` (SG with kids in SG: 6-week MOE year-end holiday and travel protocol)
 - `case-study-primary-school-transition.html` (SG with kids in SG: Primary 1 registration and cross-island transit)
@@ -27,9 +27,10 @@ Files to commit and push:
 - `case-study-expat-international-school-fees.html` (Expats with kids in SG: $84k/yr school fees, DP pass sponsorship, FX risk)
 - `case-study-cross-border-relocation-hague.html` (Expats with kids overseas: Relocation to UK, mirror court orders, Hague safeguards)
 - `case-study-virtual-visitation-timezones.html` (SG with kids overseas: 12-hr timezone video call schedules, asynchronous voice notes)
-- `sitemap.xml` (Updated XML sitemap containing all 8 indexable URLs)
+- `sitemap.xml` (Updated XML sitemap containing all 8 canonical indexable URLs)
 - `robots.txt` (Grants full access to search crawlers and references the sitemap)
 - `images/saibal-bhattacharya.jpg` (Founder profile photo)
+- `images/logo-tree.svg` (Official brand logo vector)
 
 ### Option A: Using GitHub Desktop or Web Interface
 1. Open your repository `coparentingsg-website` on [GitHub](https://github.com).
